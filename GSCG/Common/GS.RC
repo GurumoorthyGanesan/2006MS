@@ -1,0 +1,76 @@
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        MENU_SCREEN_ID_OPEN
+        MENUITEM "Exit",                        MENU_SCREEN_ID_EXIT
+    END
+    POPUP "GS2D"
+    BEGIN
+        POPUP "Line"
+        BEGIN
+            MENUITEM "Bresenham",                   GS2D_ID_Bresenham
+        END
+        POPUP "Clipping"
+        BEGIN
+            MENUITEM "Cohen-Sutherland",            GS2D_ID_CSCLIP
+        END
+        POPUP "Polygon"
+        BEGIN
+            MENUITEM "Polygon2D",                   GS2D_ID_Polygon2D
+        END
+        POPUP "Curver"
+        BEGIN
+            MENUITEM "Bezier(Pierre)",              GS2D_ID_Bezier_Pierre
+            MENUITEM "Bezier(DeCasteljau)",         GS2D_ID_Bezier_DeCasteljau
+
+            MENUITEM "NBUR",                        GS2D_ID_Bezier_NBUR
+        END
+    END
+    POPUP "Load .x"
+    BEGIN
+        MENUITEM "Load",                        GSXFile_ID_Load
+        MENUITEM "Switch",                      GSXFile_ID_SWITCH
+    END
+    POPUP "Ray tracing"
+    BEGIN
+        MENUITEM "Lighting",                    GSRT_ID_LIGHTING
+        MENUITEM "Shadow",                      GSRT_ID_SHADOW
+        MENUITEM "Reflect&Refract",             GSRT_ID_REFLECT_REFRACT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       MENU_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LoadXFile DIALOG DISCARDABLE  0, 0, 187, 77
+CAPTION "Load .x files"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,24,51,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR,77,51,50,14
+    PUSHBUTTON      "Load",IDC_LOAD,131,51,40,13
+    LTEXT           "File :",IDC_STATIC,13,31,25,11
+    EDITTEXT        IDC_XFILEPATH,32,29,140,12
+END
+
+

@@ -1,0 +1,94 @@
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : EXCEPTION_ACCESS_VIOLATION (0xc0000005) occurred at PC=0x306205C
+Function=Java_sun_awt_font_GlyphList_discardData+0x662C
+Library=C:\j2sdk1.4.2_04\jre\bin\fontmanager.dll
+
+Current Java thread:
+	at sun.awt.font.NativeFontWrapper.registerFonts(Native Method)
+	- locked <0x141f0890> (a java.lang.Class)
+	at sun.java2d.SunGraphicsEnvironment.addPathFonts(SunGraphicsEnvironment.java:797)
+	at sun.java2d.SunGraphicsEnvironment.registerFonts(SunGraphicsEnvironment.java:640)
+	at sun.java2d.SunGraphicsEnvironment.access$200(SunGraphicsEnvironment.java:53)
+	at sun.java2d.SunGraphicsEnvironment$2.run(SunGraphicsEnvironment.java:262)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(SunGraphicsEnvironment.java:256)
+	- locked <0x1050cdf8> (a sun.awt.Win32GraphicsEnvironment)
+	at sun.java2d.SunGraphicsEnvironment.mapFontName(SunGraphicsEnvironment.java:504)
+	at java.awt.Font.initializeFont(Font.java:312)
+	at java.awt.Font.<init>(Font.java:344)
+	at Sprite3D.makeName(Sprite3D.java:104)
+	at Sprite3D.<init>(Sprite3D.java:77)
+	at TourSprite.<init>(TourSprite.java:32)
+	at Content3D.addRoles(Content3D.java:200)
+	at Content3D.createSceneGraph(Content3D.java:106)
+	at Content3D.<init>(Content3D.java:78)
+	at OnlineEdu3D.<init>(OnlineEdu3D.java:41)
+	at OnlineEdu3D.main(OnlineEdu3D.java:57)
+
+Dynamic libraries:
+0x00400000 - 0x00406000 	C:\j2sdk1.4.2_04\bin\java.exe
+0x77F50000 - 0x77FF7000 	C:\WINDOWS\System32\ntdll.dll
+0x77E40000 - 0x77F4F000 	C:\WINDOWS\system32\kernel32.dll
+0x77DA0000 - 0x77E39000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x78000000 - 0x78087000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77BE0000 - 0x77C33000 	C:\WINDOWS\system32\MSVCRT.dll
+0x08000000 - 0x08138000 	C:\j2sdk1.4.2_04\jre\bin\client\jvm.dll
+0x77D10000 - 0x77D9C000 	C:\WINDOWS\system32\USER32.dll
+0x7E190000 - 0x7E1D1000 	C:\WINDOWS\system32\GDI32.dll
+0x76B10000 - 0x76B39000 	C:\WINDOWS\System32\WINMM.dll
+0x76300000 - 0x7631C000 	C:\WINDOWS\System32\IMM32.DLL
+0x621F0000 - 0x621F8000 	C:\WINDOWS\System32\LPK.DLL
+0x72F10000 - 0x72F6A000 	C:\WINDOWS\System32\USP10.dll
+0x10000000 - 0x10007000 	C:\j2sdk1.4.2_04\jre\bin\hpi.dll
+0x003F0000 - 0x003FE000 	C:\j2sdk1.4.2_04\jre\bin\verify.dll
+0x008A0000 - 0x008B9000 	C:\j2sdk1.4.2_04\jre\bin\java.dll
+0x008C0000 - 0x008CD000 	C:\j2sdk1.4.2_04\jre\bin\zip.dll
+0x02CB0000 - 0x02DBF000 	C:\j2sdk1.4.2_04\jre\bin\awt.dll
+0x72F70000 - 0x72F93000 	C:\WINDOWS\System32\WINSPOOL.DRV
+0x7CD50000 - 0x7CE74000 	C:\WINDOWS\system32\ole32.dll
+0x5A410000 - 0x5A443000 	C:\WINDOWS\System32\uxtheme.dll
+0x03030000 - 0x03080000 	C:\j2sdk1.4.2_04\jre\bin\fontmanager.dll
+0x51000000 - 0x5104D000 	C:\WINDOWS\System32\ddraw.dll
+0x73B30000 - 0x73B36000 	C:\WINDOWS\System32\DCIMAN32.dll
+0x5C000000 - 0x5C0C8000 	C:\WINDOWS\System32\D3DIM700.DLL
+0x74680000 - 0x746C4000 	C:\WINDOWS\System32\MSCTF.dll
+0x05320000 - 0x0534B000 	C:\WINDOWS\System32\msctfime.ime
+0x05350000 - 0x053A7000 	C:\j2sdk1.4.2_04\jre\bin\J3D.dll
+0x053B0000 - 0x054D8000 	C:\WINDOWS\System32\d3d8.dll
+0x054E0000 - 0x054E6000 	C:\WINDOWS\System32\d3d8thk.dll
+0x77BD0000 - 0x77BD7000 	C:\WINDOWS\system32\VERSION.dll
+0x77310000 - 0x7739B000 	C:\WINDOWS\system32\COMCTL32.dll
+0x05600000 - 0x05605000 	C:\j2sdk1.4.2_04\jre\bin\jawt.dll
+0x05B40000 - 0x05B5E000 	C:\j2sdk1.4.2_04\jre\bin\jpeg.dll
+0x05BA0000 - 0x05BAF000 	C:\j2sdk1.4.2_04\jre\bin\net.dll
+0x71A10000 - 0x71A24000 	C:\WINDOWS\System32\WS2_32.dll
+0x71A00000 - 0x71A08000 	C:\WINDOWS\System32\WS2HELP.dll
+0x719B0000 - 0x719EB000 	C:\WINDOWS\System32\mswsock.dll
+0x76EF0000 - 0x76F15000 	C:\WINDOWS\System32\DNSAPI.dll
+0x76F80000 - 0x76F87000 	C:\WINDOWS\System32\winrnr.dll
+0x76F30000 - 0x76F5C000 	C:\WINDOWS\system32\WLDAP32.dll
+0x76F90000 - 0x76F95000 	C:\WINDOWS\System32\rasadhlp.dll
+0x719F0000 - 0x719F8000 	C:\WINDOWS\System32\wshtcpip.dll
+0x76C60000 - 0x76C82000 	C:\WINDOWS\system32\imagehlp.dll
+0x6D820000 - 0x6D89D000 	C:\WINDOWS\system32\DBGHELP.dll
+0x76BC0000 - 0x76BCB000 	C:\WINDOWS\System32\PSAPI.DLL
+
+Heap at VM Abort:
+Heap
+ def new generation   total 576K, used 306K [0x10010000, 0x100b0000, 0x104f0000)
+  eden space 512K,  47% used [0x10010000, 0x1004c9d8, 0x10090000)
+  from space 64K, 100% used [0x100a0000, 0x100b0000, 0x100b0000)
+  to   space 64K,   0% used [0x10090000, 0x10090000, 0x100a0000)
+ tenured generation   total 6168K, used 5477K [0x104f0000, 0x10af6000, 0x14010000)
+   the space 6168K,  88% used [0x104f0000, 0x10a49548, 0x10a49600, 0x10af6000)
+ compacting perm gen  total 7424K, used 7224K [0x14010000, 0x14750000, 0x18010000)
+   the space 7424K,  97% used [0x14010000, 0x1471e050, 0x1471e200, 0x14750000)
+
+Local Time = Fri Dec 17 01:30:53 2004
+Elapsed Time = 9
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_04-b05 mixed mode)
+#

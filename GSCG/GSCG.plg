@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GSCG - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP48.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/GSCG.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\GSCG\CG\Lib\GS3D.CPP"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP48.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP49.tmp" with contents
+[
+d3dx9dt.lib d3d9.lib d3dx9.lib dxguid.lib dinput8.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/GSCG.pdb" /debug /machine:I386 /out:"Debug/GSCG.exe" /pdbtype:sept 
+".\Debug\GS2D.OBJ"
+".\Debug\GS3D.OBJ"
+".\Debug\GSDXGraphic.obj"
+".\Debug\GSDXInput.obj"
+".\Debug\GSSystem.obj"
+".\Debug\StructDef.obj"
+".\Debug\WinMain.obj"
+".\Debug\GS.res"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP49.tmp"
+<h3>Output Window</h3>
+Compiling...
+GS3D.CPP
+C:\Documents and Settings\Administrator\桌面\GSCG\CG\Lib\GS3D.CPP(117) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Administrator\桌面\GSCG\CG\Lib\GS3D.CPP(119) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Administrator\桌面\GSCG\CG\Lib\GS3D.CPP(147) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Administrator\桌面\GSCG\CG\Lib\GS3D.CPP(149) : warning C4305: '=' : truncation from 'const double' to 'float'
+Linking...
+
+
+
+<h3>Results</h3>
+GSCG.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>
